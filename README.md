@@ -21,6 +21,7 @@ A simple LLM application to showcase streaming and concurrent processing.
 #### Set up the backend and run
 ```bash
 $ cd api
+$ touch .env && echo "<My OpenAI API key>" > .env
 $ poetry install
 $ poetry run uvicorn api.app:app --reload --port 5000
 ```
@@ -29,7 +30,6 @@ $ poetry run uvicorn api.app:app --reload --port 5000
 
 ```bash
 $ cd ui
-$ touch .env && echo "<My OpenAI API key>" > .env
 $ npm i
 $ npm run dev
 ```
